@@ -1,0 +1,64 @@
+/* ═══════════════════════════════════════════════════════════
+   OG — themes.css
+   Accent themes via html[data-theme="…"]
+   Background presets via body[data-bg="…"]
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── ACCENT THEMES ─── */
+html[data-theme="midnight"]{
+  --brand:#0ea5e9; --brand-dark:#075985; --brand-light:#38bdf8;
+  --accent:#a855f7; --accent-soft:#c084fc; --accent-dark:#7e22ce;
+}
+html[data-theme="royal"]{
+  --brand:#8b5cf6; --brand-dark:#4c1d95; --brand-light:#a78bfa;
+  --accent:#f59e0b; --accent-soft:#fbbf24; --accent-dark:#b45309;
+}
+html[data-theme="sunset"]{
+  --brand:#f97316; --brand-dark:#7c2d12; --brand-light:#fb923c;
+  --accent:#facc15; --accent-soft:#fde047; --accent-dark:#a16207;
+}
+html[data-theme="christian"]{
+  --brand:#a855f7; --brand-dark:#581c87; --brand-light:#c084fc;
+  --accent:#dc2626; --accent-soft:#ef4444; --accent-dark:#991b1b;
+}
+html[data-theme="ocean"]{
+  --brand:#06b6d4; --brand-dark:#0e7490; --brand-light:#22d3ee;
+  --accent:#14b8a6; --accent-soft:#2dd4bf; --accent-dark:#0f766e;
+}
+
+/* ─── BACKGROUND PRESETS ─── */
+body[data-bg="royal-night"]{
+  background:
+    radial-gradient(1200px 800px at 15% 5%, rgba(139,92,246,.16), transparent 60%),
+    radial-gradient(1000px 700px at 85% 15%, rgba(245,158,11,.12), transparent 60%),
+    linear-gradient(180deg, #0a0220 0%, #1a0647 55%, #2d0f70 100%) !important;
+  background-attachment: fixed;
+}
+body[data-bg="forest"]{
+  background:
+    radial-gradient(1200px 800px at 15% 5%, rgba(16,185,129,.18), transparent 60%),
+    radial-gradient(1000px 700px at 85% 15%, rgba(245,158,11,.10), transparent 60%),
+    linear-gradient(180deg, #02140a 0%, #0e3b1f 55%, #0a2c17 100%) !important;
+  background-attachment: fixed;
+}
+body[data-bg="sunset-glow"]{
+  background:
+    radial-gradient(1200px 800px at 15% 5%, rgba(245,158,11,.22), transparent 60%),
+    radial-gradient(1000px 700px at 85% 15%, rgba(220,38,38,.18), transparent 60%),
+    linear-gradient(180deg, #1a0606 0%, #7c2d12 55%, #b45309 100%) !important;
+  background-attachment: fixed;
+}
+body[data-bg="ocean-deep"]{
+  background:
+    radial-gradient(1200px 800px at 15% 5%, rgba(6,182,212,.18), transparent 60%),
+    radial-gradient(1000px 700px at 85% 15%, rgba(20,184,166,.14), transparent 60%),
+    linear-gradient(180deg, #020f1a 0%, #0c4a6e 55%, #0e7490 100%) !important;
+  background-attachment: fixed;
+}
+body[data-bg="plum-rose"]{
+  background:
+    radial-gradient(1200px 800px at 15% 5%, rgba(168,85,247,.18), transparent 60%),
+    radial-gradient(1000px 700px at 85% 15%, rgba(220,38,38,.14), transparent 60%),
+    linear-gradient(180deg, #1a0510 0%, #581c87 55%, #7f1d1d 100%) !important;
+  background-attachment: fixed;
+}
