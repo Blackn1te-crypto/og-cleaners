@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OG Christian Clothing — Hoodies &amp; Jackets</title>
+
+<script src="js/theme.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body data-page="clothing">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" data-editable="logo-clothing" src="images/og-brand-logo.png" alt="OG Brand" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'brand__mark',textContent:'OG'}))">
+      <div class="brand-text"><strong>OG Clothing</strong><span>Christian streetwear</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="cleaners.html">Cleaners</a></li>
+        <li><a href="clothing.html" class="is-active">Clothing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero page-hero--brand">
+  <div class="page-hero__glow"></div>
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light">OG Christian Clothing</p>
+    <h1>Wear the message.</h1>
+    <p class="page-hero__lead">Hoodies and jackets designed with purpose. Prices from $10.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">The Collection</p>
+      <h2>5 signature pieces</h2>
+      <p class="lead">Tap any image to update it via settings. Order directly via WhatsApp.</p>
+    </div>
+
+    <div class="hoodie-grid">
+      <article class="hoodie-card">
+        <div class="hoodie-card__img">
+          <img data-editable="hoodie-1" src="images/hoodie-1.jpg" alt="Faith Over Fear" onerror="this.parentElement.classList.add('is-placeholder')">
+          <span class="hoodie-card__badge">Bestseller</span>
+        </div>
+        <div class="hoodie-card__body">
+          <h3>Faith Over Fear Hoodie</h3>
+          <p class="hoodie-card__desc">Premium fleece · Embroidered OG crest</p>
+          <div class="hoodie-card__meta">
+            <span class="hoodie-card__price" data-price="hoodie-1">$10</span>
+            <button class="btn btn--sm btn--primary" onclick="orderHoodie('Faith Over Fear Hoodie')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hoodie-card">
+        <div class="hoodie-card__img">
+          <img data-editable="hoodie-2" src="images/hoodie-2.jpg" alt="Risen &amp; Reign" onerror="this.parentElement.classList.add('is-placeholder')">
+          <span class="hoodie-card__badge">New</span>
+        </div>
+        <div class="hoodie-card__body">
+          <h3>Risen &amp; Reign Hoodie</h3>
+          <p class="hoodie-card__desc">Heavyweight fleece · Back print</p>
+          <div class="hoodie-card__meta">
+            <span class="hoodie-card__price" data-price="hoodie-2">$12</span>
+            <button class="btn btn--sm btn--primary" onclick="orderHoodie('Risen &amp; Reign Hoodie')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hoodie-card">
+        <div class="hoodie-card__img">
+          <img data-editable="hoodie-3" src="images/hoodie-3.jpg" alt="Chosen Generation" onerror="this.parentElement.classList.add('is-placeholder')">
+        </div>
+        <div class="hoodie-card__body">
+          <h3>Chosen Generation Hoodie</h3>
+          <p class="hoodie-card__desc">Soft cotton · Faith-based graphic</p>
+          <div class="hoodie-card__meta">
+            <span class="hoodie-card__price" data-price="hoodie-3">$10</span>
+            <button class="btn btn--sm btn--primary" onclick="orderHoodie('Chosen Generation Hoodie')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hoodie-card">
+        <div class="hoodie-card__img">
+          <img data-editable="hoodie-4" src="images/hoodie-4.jpg" alt="Grace Wins" onerror="this.parentElement.classList.add('is-placeholder')">
+        </div>
+        <div class="hoodie-card__body">
+          <h3>Grace Wins Jacket</h3>
+          <p class="hoodie-card__desc">Windproof · Reflective OG logo</p>
+          <div class="hoodie-card__meta">
+            <span class="hoodie-card__price" data-price="hoodie-4">$15</span>
+            <button class="btn btn--sm btn--primary" onclick="orderHoodie('Grace Wins Jacket')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hoodie-card">
+        <div class="hoodie-card__img">
+          <img data-editable="hoodie-5" src="images/hoodie-5.jpg" alt="Kingdom Minded" onerror="this.parentElement.classList.add('is-placeholder')">
+          <span class="hoodie-card__badge">Limited</span>
+        </div>
+        <div class="hoodie-card__body">
+          <h3>Kingdom Minded Hoodie</h3>
+          <p class="hoodie-card__desc">Limited drop · Signature OG tag</p>
+          <div class="hoodie-card__meta">
+            <span class="hoodie-card__price" data-price="hoodie-5">$15</span>
+            <button class="btn btn--sm btn--primary" onclick="orderHoodie('Kingdom Minded Hoodie')">Order</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">How to Order</p>
+      <h2>Simple. Fast. Personal.</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card"><div class="value-card__icon">1️⃣</div><h3>Choose</h3><p>Pick your favourite piece.</p></div>
+      <div class="value-card"><div class="value-card__icon">2️⃣</div><h3>WhatsApp</h3><p>Send size and colour.</p></div>
+      <div class="value-card"><div class="value-card__icon">3️⃣</div><h3>Receive</h3><p>We deliver to you.</p></div>
+    </div>
+    <div class="center-actions">
+      <a class="btn btn--primary" href="https://wa.me/263776339527" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> OG Christian Clothing.</span>
+      <span>Created by <strong>Malveen Siriya</strong> · Engineered by <strong>BL@CKN1TE</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/inline-editor.js"></script>
+<script>
+  function orderHoodie(name){
+    var msg = encodeURIComponent('Hi OG! I\'d like to order: ' + name);
+    window.open('https://wa.me/263776339527?text=' + msg, '_blank');
+  }
+</script>
+</body>
+</html>

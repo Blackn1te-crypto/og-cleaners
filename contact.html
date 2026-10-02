@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — OG</title>
+
+<script src="js/theme.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="images/og-cleaners-logo.png" alt="OG" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'brand__mark',textContent:'OG'}))">
+      <div class="brand-text"><strong>OG</strong><span>Contact</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="cleaners.html">Cleaners</a></li>
+        <li><a href="clothing.html">Clothing</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero page-hero--contact">
+  <div class="page-hero__glow"></div>
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light">Get in Touch</p>
+    <h1>Two ways to reach us</h1>
+    <p class="page-hero__lead">Business enquiries for OG, technical enquiries for the developer.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-dual">
+
+      <div class="contact-panel">
+        <div class="contact-panel__head">
+          <span class="contact-panel__badge">OG Business</span>
+          <h3>Reach Malveen Siriya</h3>
+        </div>
+        <ul class="contact-links">
+          <li><span class="contact-links__icon">📧</span><a href="mailto:malveensiriya6@gmail.com">malveensiriya6@gmail.com</a></li>
+          <li><span class="contact-links__icon">💬</span><a href="https://wa.me/263776339527" target="_blank" rel="noopener">+263 776 339 527 (WhatsApp)</a></li>
+          <li><span class="contact-links__icon">💬</span><a href="https://wa.me/263780540231" target="_blank" rel="noopener">+263 780 540 231</a></li>
+          <li><span class="contact-links__icon">💬</span><a href="https://wa.me/263714799483" target="_blank" rel="noopener">+263 714 799 483</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-panel contact-panel--dev">
+        <div class="contact-panel__head">
+          <span class="contact-panel__badge contact-panel__badge--dev">Developer</span>
+          <h3>BL@CKN1TE — Pardon Katsande</h3>
+        </div>
+        <ul class="contact-links contact-links--dev">
+          <li><span class="contact-links__icon">📧</span><a href="mailto:Katsandepardon23@gmail.com">Katsandepardon23@gmail.com</a></li>
+          <li><span class="contact-links__icon">📧</span><a href="mailto:blackn1te.trihat@gmail.com">blackn1te.trihat@gmail.com</a></li>
+          <li><span class="contact-links__icon">📧</span><a href="mailto:blackn1te.incisive.trihat@gmail.com">blackn1te.incisive.trihat@gmail.com</a></li>
+          <li><span class="contact-links__icon">📧</span><a href="mailto:blackn1te@protonmail.com">blackn1te@protonmail.com</a></li>
+          <li><span class="contact-links__icon">💬</span><a href="https://wa.me/263780540231" target="_blank" rel="noopener">WhatsApp +263 780 540 231</a></li>
+          <li><span class="contact-links__icon">💬</span><a href="https://wa.me/263714799483" target="_blank" rel="noopener">WhatsApp +263 714 799 483</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <form class="contact-form" action="mailto:malveensiriya6@gmail.com" method="post" enctype="text/plain">
+      <h3 class="contact-form__title">Send a Message</h3>
+      <div class="form-row">
+        <div class="field"><label>Your Name *</label><input name="name" required></div>
+        <div class="field"><label>Email *</label><input name="email" type="email" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label>Enquiry Type</label>
+          <select name="subject">
+            <option>OG Cleaners — Quote</option>
+            <option>OG Clothing — Order</option>
+            <option>Wholesale / Bulk</option>
+            <option>General</option>
+          </select>
+        </div>
+        <div class="field"><label>Phone</label><input name="phone" type="tel"></div>
+      </div>
+      <div class="field"><label>Message *</label><textarea name="message" rows="5" required></textarea></div>
+      <button class="btn btn--primary" type="submit">Send Message</button>
+      <p class="form-note">We usually reply within 24 hours.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> OG.</span>
+      <span>Created by <strong>Malveen Siriya</strong> · Engineered by <strong>BL@CKN1TE</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/inline-editor.js"></script>
+</body>
+</html>

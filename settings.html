@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings — OG</title>
+
+<script src="js/theme.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body data-page="settings">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="images/og-cleaners-logo.png" alt="OG" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'brand__mark',textContent:'OG'}))">
+      <div class="brand-text"><strong>OG</strong><span>Settings</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="cleaners.html">Cleaners</a></li>
+        <li><a href="clothing.html">Clothing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="settings.html" class="is-active">Settings</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero page-hero--settings">
+  <div class="page-hero__glow"></div>
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light">Control Panel</p>
+    <h1>Settings</h1>
+    <p class="page-hero__lead">Themes, backgrounds, images, welcome text, prices, announcements, contact — all in one place.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap settings-wrap">
+
+    <!-- THEME -->
+    <div class="settings-card">
+      <h2>🎨 Theme</h2>
+      <p>Change the entire website's accent colour palette instantly.</p>
+      <div class="theme-grid" id="themeGrid">
+        <button class="theme-swatch" data-theme="og-green"><span style="background:linear-gradient(135deg,#0e3b1f,#2a8a4d,#e8b21f)"></span><b>OG Green</b></button>
+        <button class="theme-swatch" data-theme="midnight"><span style="background:linear-gradient(135deg,#0f172a,#38bdf8)"></span><b>Midnight</b></button>
+        <button class="theme-swatch" data-theme="royal"><span style="background:linear-gradient(135deg,#2d0f70,#6d3fd0)"></span><b>Royal</b></button>
+        <button class="theme-swatch" data-theme="sunset"><span style="background:linear-gradient(135deg,#7c2d12,#f97316)"></span><b>Sunset</b></button>
+        <button class="theme-swatch" data-theme="christian"><span style="background:linear-gradient(135deg,#3b0764,#9333ea)"></span><b>Christian</b></button>
+        <button class="theme-swatch" data-theme="ocean"><span style="background:linear-gradient(135deg,#0c4a6e,#0ea5e9)"></span><b>Ocean</b></button>
+      </div>
+    </div>
+
+    <!-- BACKGROUND & COLORS -->
+    <div class="settings-card">
+      <h2>🌈 Background &amp; Colors</h2>
+      <p>Choose a preset background, or fine-tune your own colours with the pickers below.</p>
+
+      <p class="settings-sub">Preset Backgrounds</p>
+      <div class="theme-grid" id="bgGrid">
+        <button class="theme-swatch" data-bg="default"><span style="background:linear-gradient(180deg,#050810,#0a1220,#0f1a2e)"></span><b>Deep Space</b></button>
+        <button class="theme-swatch" data-bg="royal-night"><span style="background:linear-gradient(180deg,#0a0220,#1a0647,#2d0f70)"></span><b>Royal Night</b></button>
+        <button class="theme-swatch" data-bg="forest"><span style="background:linear-gradient(180deg,#02140a,#0e3b1f,#0a2c17)"></span><b>Forest</b></button>
+        <button class="theme-swatch" data-bg="sunset-glow"><span style="background:linear-gradient(180deg,#1a0606,#7c2d12,#b45309)"></span><b>Sunset Glow</b></button>
+        <button class="theme-swatch" data-bg="ocean-deep"><span style="background:linear-gradient(180deg,#020f1a,#0c4a6e,#0e7490)"></span><b>Ocean Deep</b></button>
+        <button class="theme-swatch" data-bg="plum-rose"><span style="background:linear-gradient(180deg,#1a0510,#581c87,#7f1d1d)"></span><b>Plum Rose</b></button>
+      </div>
+
+      <p class="settings-sub" style="margin-top:24px">Custom Colours</p>
+      <div class="color-grid">
+        <div class="color-item">
+          <label>Background — Top</label>
+          <input type="color" id="bgTopPicker" value="#050810">
+          <span id="bgTopHex">#050810</span>
+        </div>
+        <div class="color-item">
+          <label>Background — Middle</label>
+          <input type="color" id="bgMidPicker" value="#0a1220">
+          <span id="bgMidHex">#0A1220</span>
+        </div>
+        <div class="color-item">
+          <label>Background — Bottom</label>
+          <input type="color" id="bgBotPicker" value="#0f1a2e">
+          <span id="bgBotHex">#0F1A2E</span>
+        </div>
+        <div class="color-item">
+          <label>Accent Colour</label>
+          <input type="color" id="accentPicker" value="#f59e0b">
+          <span id="accentHex">#F59E0B</span>
+        </div>
+        <div class="color-item">
+          <label>Brand Colour</label>
+          <input type="color" id="brandPicker" value="#10b981">
+          <span id="brandHex">#10B981</span>
+        </div>
+      </div>
+
+      <div class="row-between" style="margin-top:20px">
+        <button class="btn btn--primary btn--sm" onclick="saveCustomColors()">Save Custom Colours</button>
+        <button class="btn btn--outline btn--sm" onclick="resetCustomColors()">Reset Background</button>
+      </div>
+    </div>
+
+    <!-- WELCOME MESSAGE -->
+    <div class="settings-card">
+      <h2>✍️ Welcome Message</h2>
+      <p>Edit the welcome message shown on the homepage hero section.</p>
+      <div class="field"><label>Welcome Message</label>
+        <textarea id="welcomeInput" rows="4" placeholder="Where every surface shines and every stitch carries a message…"></textarea>
+      </div>
+      <button class="btn btn--primary btn--sm" style="margin-top:12px" onclick="saveWelcome()">Save Welcome Message</button>
+    </div>
+
+    <!-- PRICES -->
+    <div class="settings-card">
+      <h2>💰 Hoodie Prices</h2>
+      <p>Update each hoodie's price. Shown on both the clothing page and homepage.</p>
+      <div class="price-grid">
+        <div class="field"><label>Hoodie 1 — Faith Over Fear</label><input id="price-1" type="text" placeholder="$10"></div>
+        <div class="field"><label>Hoodie 2 — Risen &amp; Reign</label><input id="price-2" type="text" placeholder="$12"></div>
+        <div class="field"><label>Hoodie 3 — Chosen Generation</label><input id="price-3" type="text" placeholder="$10"></div>
+        <div class="field"><label>Hoodie 4 — Grace Wins Jacket</label><input id="price-4" type="text" placeholder="$15"></div>
+        <div class="field"><label>Hoodie 5 — Kingdom Minded</label><input id="price-5" type="text" placeholder="$15"></div>
+      </div>
+      <button class="btn btn--primary btn--sm" style="margin-top:12px" onclick="savePrices()">Save Prices</button>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="settings-card">
+      <h2>🖼️ Images</h2>
+      <p>Tap any image below to upload a replacement from your gallery.</p>
+      <div class="upload-grid">
+        <div class="upload-item">
+          <label>Main Logo</label>
+          <div class="upload-preview" data-upload-key="logo-main"><img id="preview-logo-main" src="images/og-cleaners-logo.png" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="logo-main">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('logo-main')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Clothing Logo</label>
+          <div class="upload-preview" data-upload-key="logo-clothing"><img id="preview-logo-clothing" src="images/og-brand-logo.png" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="logo-clothing">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('logo-clothing')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Cleaners Image 1</label>
+          <div class="upload-preview" data-upload-key="cleaners-home-1"><img id="preview-cleaners-home-1" src="images/cleaners-home-1.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="cleaners-home-1">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('cleaners-home-1')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Cleaners Image 2</label>
+          <div class="upload-preview" data-upload-key="cleaners-home-2"><img id="preview-cleaners-home-2" src="images/cleaners-home-2.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="cleaners-home-2">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('cleaners-home-2')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Hoodie 1</label>
+          <div class="upload-preview" data-upload-key="hoodie-1"><img id="preview-hoodie-1" src="images/hoodie-1.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="hoodie-1">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('hoodie-1')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Hoodie 2</label>
+          <div class="upload-preview" data-upload-key="hoodie-2"><img id="preview-hoodie-2" src="images/hoodie-2.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="hoodie-2">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('hoodie-2')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Hoodie 3</label>
+          <div class="upload-preview" data-upload-key="hoodie-3"><img id="preview-hoodie-3" src="images/hoodie-3.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="hoodie-3">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('hoodie-3')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Hoodie 4</label>
+          <div class="upload-preview" data-upload-key="hoodie-4"><img id="preview-hoodie-4" src="images/hoodie-4.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="hoodie-4">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('hoodie-4')">Reset</button>
+        </div>
+        <div class="upload-item">
+          <label>Hoodie 5</label>
+          <div class="upload-preview" data-upload-key="hoodie-5"><img id="preview-hoodie-5" src="images/hoodie-5.jpg" alt=""></div>
+          <input type="file" accept="image/*" data-upload-input="hoodie-5">
+          <button class="btn btn--sm btn--outline" onclick="resetImage('hoodie-5')">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANNOUNCEMENTS -->
+    <div class="settings-card">
+      <h2>📣 Announcements</h2>
+      <p>Shown as a banner at the top of the homepage.</p>
+      <div class="field"><label>Announcement Text</label>
+        <input id="announceInput" type="text" placeholder="e.g. New hoodies arrived — check the collection">
+      </div>
+      <div class="row-between" style="margin-top:14px">
+        <label class="check"><input type="checkbox" id="announceEnabled"><span>Show announcement</span></label>
+        <button class="btn btn--primary btn--sm" onclick="saveAnnounce()">Save</button>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="settings-card">
+      <h2>📧 Contact Information</h2>
+      <p>Business contact for OG. Developer contact is separate and fixed.</p>
+      <div class="form-row">
+        <div class="field"><label>OG Business Email</label><input id="emailInput" type="email" placeholder="malveensiriya6@gmail.com"></div>
+        <div class="field"><label>OG WhatsApp</label><input id="wa1Input" type="text" placeholder="+263 776 339 527"></div>
+      </div>
+      <button class="btn btn--primary btn--sm" style="margin-top:12px" onclick="saveContact()">Save Contact</button>
+    </div>
+
+    <!-- PRIVACY -->
+    <div class="settings-card">
+      <h2>🔒 Privacy Notice</h2>
+      <p>Short privacy notice shown on the site. Full policy at <a href="privacy.html">privacy.html</a>.</p>
+      <div class="field"><textarea id="privacyInput" rows="4" placeholder="We only use your information to fulfil orders and enquiries."></textarea></div>
+      <button class="btn btn--primary btn--sm" onclick="savePrivacy()">Save Privacy Notice</button>
+    </div>
+
+    <!-- DEVELOPER -->
+    <div class="settings-card settings-card--dev">
+      <h2>👨‍💻 Developer</h2>
+      <p><strong>Created by:</strong> Malveen Siriya</p>
+      <p><strong>Engineered by:</strong> Pardon Katsande — BL@CKN1TE · The Incisive Tri-Hat Hacker</p>
+      <div class="dev-contacts">
+        <a class="dev-chip" href="mailto:Katsandepardon23@gmail.com">📧 Katsandepardon23@gmail.com</a>
+        <a class="dev-chip" href="mailto:blackn1te.trihat@gmail.com">📧 blackn1te.trihat@gmail.com</a>
+        <a class="dev-chip" href="mailto:blackn1te.incisive.trihat@gmail.com">📧 blackn1te.incisive.trihat@gmail.com</a>
+        <a class="dev-chip" href="mailto:blackn1te@protonmail.com">📧 blackn1te@protonmail.com</a>
+        <a class="dev-chip dev-chip--wa" href="https://wa.me/263780540231" target="_blank" rel="noopener">💬 WhatsApp +263 780 540 231</a>
+        <a class="dev-chip dev-chip--wa" href="https://wa.me/263714799483" target="_blank" rel="noopener">💬 WhatsApp +263 714 799 483</a>
+      </div>
+    </div>
+
+    <!-- RESET -->
+    <div class="settings-card">
+      <h2>♻️ Reset</h2>
+      <p>Clear all customisations and restore defaults.</p>
+      <button class="btn btn--outline" onclick="if(confirm('Reset all settings?')) resetAllSettings()">Reset Everything</button>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> OG.</span>
+      <span>Created by <strong>Malveen Siriya</strong> · Engineered by <strong>BL@CKN1TE</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/inline-editor.js"></script>
+</body>
+</html>
